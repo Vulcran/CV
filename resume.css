@@ -1,0 +1,125 @@
+:root {
+    --primary-blue: #1a3a5a;
+    --accent-blue: #4682b4;
+    --text-dark: #222;
+    --text-light: #555;
+
+    /* Optimized Sizes for 1-Page */
+    --name-size: 18pt;
+    --contact-size: 9pt;
+    --section-title-size: 10pt;
+    --entry-title-size: 10pt;
+    --body-size: 9pt;
+    --meta-size: 8.5pt;
+}
+
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Optima', sans-serif;
+}
+
+.wrapper {
+    background-color: white;
+    width: 8.5in;
+    height: 11in; /* Hard limit for 1 page */
+    margin: 0 auto;
+    padding: 0.3in 0.5in;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10pt;
+}
+
+/* Compact Header */
+.header {
+    text-align: center;
+    border-bottom: 1.5px solid var(--primary-blue);
+    padding-bottom: 8px;
+}
+
+#Name {
+    margin: 0;
+    font-size: var(--name-size);
+    letter-spacing: 1px;
+    color: var(--primary-blue);
+}
+
+.contactInfo {
+    margin: 2px 0 0 0;
+    font-size: var(--contact-size);
+}
+
+/* Sections */
+.sectionTitle {
+    font-size: var(--section-title-size);
+    color: var(--accent-blue);
+    border-bottom: 1.5px solid #ccc;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+/* Entry Layout */
+.entry {
+    margin-bottom: 6px;
+    line-height: 1.2;
+    padding-left: 10px;
+}
+
+.firstRow, .secondRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.entryTitle {
+    margin: 0;
+    font-size: var(--entry-title-size);
+    font-weight: bold;
+}
+
+.secondaryTitle {
+    font-weight: normal;
+    color: var(--text-light);
+    font-size: 8.5pt;
+    font-style: italic;
+}
+
+.entryLocation, .entryDate {
+    margin: 0;
+    font-size: var(--meta-size);
+    color: var(--text-dark);
+}
+
+.entryStatus {
+    margin: 0;
+    font-size: 8.5pt;
+    font-style: italic;
+    color: var(--accent-blue);
+}
+
+/* Ultra-efficient Bullets */
+.bullets {
+    margin: 2px 0 0 0;
+    padding-left: 18px;
+    margin-left: 10px;
+}
+
+li {
+    font-size: var(--body-size);
+    margin-bottom: 1px;
+}
+
+#awards .entry {
+    margin-bottom: 2px;
+}
+
+#education .entryStatus {
+    font-weight: normal;
+}
+
+#professional .entryStatus {
+    font-weight: normal;
+}
