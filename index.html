@@ -15,6 +15,7 @@
             height: 100vh;
             margin: 0;
             background-color: #f0f2f5;
+            font-size: 1.3rem
         }
         .container {
             background: white;
@@ -37,8 +38,14 @@
             color: white;
             transition: transform 0.2s;
             margin-top: 1rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
         }
         button:active { transform: scale(0.95); }
+        .emoji{
+            font-size: 1.5rem
+        }
     </style>
 </head>
 <body>
@@ -47,10 +54,10 @@
     <h1>Hey Friend! 👋</h1>
     <p>Welcome to my webpage.</p>
 
-    <button onclick="chaosMode()">🪄 Click for Magic</button>
-    <button onclick="redirect('wmta')">🚂 Watch the trains go by</button>
-    <button onclick="redirect('cv')">📄 Check out my CV</button>
-    <button onclick="redirect('admin')">🔧 Admin Panel</button>
+    <button onclick="chaosMode()"><span class="emoji">🪄</span> Click for Magic</button>
+    <button onclick="redirect('wmta')"><span class="emoji">🚂</span> Watch the trains go by</button>
+    <button onclick="redirect('cv')"><span class="emoji">📄</span> Check out my CV</button>
+    <button onclick="redirect('admin')"><span class="emoji">🛠️</span> Admin Panel</button>
 
 </div>
 
