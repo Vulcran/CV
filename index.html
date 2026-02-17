@@ -41,10 +41,14 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            align-items: center;
         }
         button:active { transform: scale(0.95); }
         .emoji{
-            font-size: 1.5rem
+            font-size: 1.9rem
+        }
+        .btnText{
+            font-size: 1.7rem
         }
     </style>
 </head>
@@ -54,10 +58,10 @@
     <h1>Hey Friend! 👋</h1>
     <p>Welcome to my webpage.</p>
 
-    <button onclick="chaosMode()"><span class="emoji">🪄</span> Click for Magic</button>
-    <button onclick="redirect('wmta')"><span class="emoji">🚂</span> Watch the trains go by</button>
-    <button onclick="redirect('cv')"><span class="emoji">📄</span> Check out my CV</button>
-    <button onclick="redirect('admin')"><span class="emoji">🛠️</span> Admin Panel</button>
+    <button onclick="chaosMode()"><span class="emoji">🪄</span> <span class="btnText">Click for Magic</span></button>
+    <button onclick="redirect('wmta')"><span class="emoji">🚂</span> <span class="btnText">Watch the trains go by</span></button>
+    <button onclick="redirect('cv')"><span class="emoji">📄</span> <span class="btnText">Check out my CV</span></button>
+    <button onclick="redirect('admin')"><span class="emoji">🛠️</span> <span class="btnText">Admin Panel</span></button>
 
 </div>
 
