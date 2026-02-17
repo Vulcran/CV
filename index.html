@@ -22,12 +22,13 @@
             padding: 2rem;
             border-radius: 20px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-            max-width: 400px;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
+            min-width: 30rem;
         }
-        h1 { color: #333; }
+        h1 { color: #333; margin: 10px }
+        p{margin: 5px}
         button {
             padding: 12px 24px;
             font-size: 1rem;
@@ -40,24 +41,26 @@
             margin-top: 1rem;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: left;
             align-items: center;
         }
         button:active { transform: scale(0.95); }
         .emoji{
-            font-size: 1.9rem
+            font-size: 1.9rem;
+            margin-left: 1rem;
         }
         .btnText{
             font-size: 1.3rem;
-            padding-left: 1.2rem
+            padding-left: 1rem
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <h1>Hey Friend! 👋</h1>
-    <p>Welcome to my webpage.</p>
+    <h1>Hey There! 👋</h1>
+    <p>Welcome to William Russo's website</p>
+
 
     <button onclick="chaosMode()"><span class="emoji">🪄</span> <span class="btnText">Click for Magic</span></button>
     <button onclick="redirect('wmta')"><span class="emoji">🚂</span> <span class="btnText">Watch the trains go by</span></button>
