@@ -53,6 +53,9 @@
             font-size: 1.3rem;
             padding-left: 1rem
         }
+        a {
+            all: unset;
+        }
     </style>
 </head>
 <body>
@@ -63,9 +66,10 @@
 
 
     <button onclick="chaosMode()"><span class="emoji">🪄</span> <span class="btnText">Click for Magic</span></button>
-    <button onclick="redirect('wmta')"><span class="emoji">🚂</span> <span class="btnText">Watch the trains go by</span></button>
-    <button onclick="redirect('cv')"><span class="emoji">📄</span> <span class="btnText">Check out my CV</span></button>
-    <button onclick="redirect('admin')"><span class="emoji">🛠️</span> <span class="btnText">Admin Panel</span></button>
+    <button onclick="redirect('scamstudy')"><a href="https://scamstudy.ewilliamrusso.com/start"><span class="emoji">📸</span> <span class="btnText">Facebook Extension Early Access</span></a></button>
+    <button onclick="redirect('wmta')"><a href="https://wmta.ewilliamrusso.com"><span class="emoji">🚂</span> <span class="btnText">Watch the trains go by</span></a></button>
+    <button onclick="redirect('cv')"><a href="cv"><span class="emoji">📄</span> <span class="btnText">Check out my CV</span></a></button>
+    <button onclick="redirect('admin')"><a href="https://admin.ewilliamrusso.com"><span class="emoji">🛠️</span> <span class="btnText">Admin Panel</span></a></button>
 
 </div>
 
@@ -85,6 +89,9 @@
         }
         if(loc === "cv"){
             window.location.href = "cv"
+        }
+        if(loc === "scamstudy"){
+            window.location.href = "https://scamstudy.ewilliamrusso.com/start"
         }
     }
 </script>
